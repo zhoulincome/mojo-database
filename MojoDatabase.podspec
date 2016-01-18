@@ -10,7 +10,8 @@ Pod::Spec.new do |s|
   s.source                = { :git => "https://github.com/zhuchaowe/mojo-database.git",:tag=>"1.4"}
   s.ios.deployment_target = "6.0"
   s.source_files = 'MojoDatabase/*.{h,m}','JSONModel/**/*.{h,m}'
+  s.frameworks = "AVFoundation"
   s.libraries = "sqlite3"
-  s.requires_arc          = true
+  s.requires_arc = true
   
 end
