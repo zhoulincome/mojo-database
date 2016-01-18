@@ -7,7 +7,7 @@ Pod::Spec.new do |s|
   s.platform     = :ios,'6.0'
   s.license               = { :type => "MIT", :file => "LICENSE" }
   s.author                = { "zhuchao" => "zhuchaowe@163.com" }
-  s.source                = { :git => "https://github.com/zhuchaowe/mojo-database.git",:tag=>s.version}
+  s.source                = { :git => "https://github.com/zhuchaowe/mojo-database.git",:tag=>"1.4"}
   s.ios.deployment_target = "6.0"
   s.source_files = 'MojoDatabase/*.{h,m}','JSONModel/**/*.{h,m}'
   s.libraries = "sqlite3"
