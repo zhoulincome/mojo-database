@@ -29,6 +29,28 @@ NSString *const kDatabaseName = @"MojoDatabase.sqlite3";
 	return self;
 }
 
+-(id)initWithMigrationsName:(NSString *)dataBaseName loggingEnabled:(BOOL)loggingEnabled{
+    self = [super initWithFileName:kDatabaseName];
+    if (!self) { return nil; }
+    
+    [self setLogging:loggingEnabled];
+    [self runMigrations];
+    [MojoModel setDatabase:self];
+    
+    return self;
+}
+
+-(id)initWithMigrationsName:(NSString *)dataBaseName{
+    self = [super initWithFileName:dataBaseName];
+    if (!self) { return nil; }
+    
+    [self setLogging:NO];
+    [self runMigrations];
+    [MojoModel setDatabase:self];
+    
+    return self;
+}
+
 -(id)initWithMigrations:(BOOL)loggingEnabled {
 	self = [super initWithFileName:kDatabaseName];
 	if (!self) { return nil; }

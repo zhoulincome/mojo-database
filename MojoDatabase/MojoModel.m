@@ -76,7 +76,7 @@ static NSMutableDictionary *tableCache = nil;
     self.table = NSStringFromClass([self class]);
     self.field = @"*";
     self.where = @" WHERE primaryKey = ?";
-    self.map = [NSMutableArray arrayWithObject:[NSNumber numberWithInt:self.primaryKey]];
+    self.map = [NSMutableArray arrayWithObject:[NSNumber numberWithInteger:self.primaryKey]];
     self.order = @"";
     self.group = @"";
     self.limit = @"";
