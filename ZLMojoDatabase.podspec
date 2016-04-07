@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
   s.social_media_url      = "https://github.com/zhoulincome/mojo-database"
   s.platform     = :ios,'6.0'
   s.license               = { :type => "MIT", :file => "LICENSE" }
-  s.author                = { "zhoulin” => “359344816@qq.com" }
+  s.author                = { "zhoulin" => "359344816@qq.com" }
   s.source                = { :git => "https://github.com/zhoulincome/mojo-database.git",:tag=> s.version}
   s.ios.deployment_target = "6.0"
   s.source_files = 'MojoDatabase/*.{h,m}'
