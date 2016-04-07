@@ -17,6 +17,7 @@ Mojo Database has two (2) types of interaction with your Objective-C application
 * The "AppDatabase" class is where you will define your database properties and schema and setup your migrations for updating the schema.
 
 ### Creating and Connecting to a SQLite DB
+在easyios 中抽取出来，将jsonmodel去掉了，单独使用
 
 In your application delegate header file, you should should create an instance variable that will be used to referenc
 e your database in the application.
