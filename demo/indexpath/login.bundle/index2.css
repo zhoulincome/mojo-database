@@ -1,0 +1,61 @@
+#p{
+  color:green;
+}
+#img{
+  width:120px;
+  height:50px;
+}
+#a{
+  color:yellow;
+}
+
+#buttonId{
+    width:98%;
+    height:50px;
+    margin-left:1%;
+    background-color:yellowgreen;
+}
+
+body{
+    padding:0px;
+    margin:0px;
+}
+
+.foot{
+    width:100%;
+    height:50px;
+    background-color:gray;
+    position:fixed;
+    bottom:0px;
+    left:0px;
+    right:0px;
+}
+
+.foot_1{
+    float:left;
+    width:25%;
+    height:50px;
+    text-align:center;
+/*    background-color:red;*/
+}
+
+.foot_1_image{
+    float:center;
+    text-align:center;
+    height:19px;
+}
+
+.foot_1_image_image{
+    float:center;
+    width:30px;
+    height:30px;
+}
+
+.foot_1_label{
+/*    top:31px;*/
+    background-color:red;
+    text-align:center;
+    height:19px;
+    width:100%;
+    bottom:0px;
+}
