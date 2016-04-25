@@ -30,7 +30,7 @@ NSString *const kDatabaseName = @"MojoDatabase.sqlite3";
 }
 
 -(id)initWithMigrationsName:(NSString *)dataBaseName loggingEnabled:(BOOL)loggingEnabled{
-    self = [super initWithFileName:kDatabaseName];
+    self = [super initWithFileName:dataBaseName];
     if (!self) { return nil; }
     
     [self setLogging:loggingEnabled];
