@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name                  = "ZLMojoDatabase"
-  s.version               = "1.5"
+  s.version               = "1.5.1"
   s.summary               = "MojoDatabase is an ActiveRecord-like ORM for SQLite written in Objective-C for use in iOS applications."
   s.homepage              = "https://github.com/zhoulincome/mojo-database"
   s.social_media_url      = "https://github.com/zhoulincome/mojo-database"
