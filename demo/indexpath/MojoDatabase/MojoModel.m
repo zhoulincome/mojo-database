@@ -59,7 +59,11 @@ static NSMutableDictionary *tableCache = nil;
 #pragma mark - Class Methods - General
 
 +(NSString *)tableName {
-  return NSStringFromClass([self class]);
+    NSString *name = NSStringFromClass([self class]);
+    if ([name componentsSeparatedByString:@"."].count > 1) {
+        name = [name componentsSeparatedByString:@"."].lastObject;
+    }
+    return name;
 }
 
 -(id)init
@@ -73,7 +77,11 @@ static NSMutableDictionary *tableCache = nil;
 }
 
 -(void)resetAll{
-    self.table = NSStringFromClass([self class]);
+    NSString *name = NSStringFromClass([self class]);
+    if ([name componentsSeparatedByString:@"."].count > 1) {
+        name = [name componentsSeparatedByString:@"."].lastObject;
+    }
+    self.table = name;
     self.field = @"*";
     self.where = @" WHERE primaryKey = ?";
     self.map = [NSMutableArray arrayWithObject:[NSNumber numberWithInteger:self.primaryKey]];
